@@ -1,9 +1,10 @@
 import '@styles/globals.css';
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
 
 export const metadata = {
     title: 'NextAI',
     description: 'Discover &  Share AI prompts',
-    keywords: 'app,react,nextjs',
 }
 
 const RootLayout = ({ children }) => {
@@ -15,6 +16,8 @@ const RootLayout = ({ children }) => {
             </div>
 
             <main className='app'>
+                <Nav />
+
                 {children}
             </main>
         </body>
